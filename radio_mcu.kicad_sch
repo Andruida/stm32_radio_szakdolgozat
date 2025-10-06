@@ -2682,7 +2682,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Transistor_FET:NDT3055L"
+		(symbol "Transistor_FET:DMN10H220L"
 			(pin_names
 				(hide yes)
 			)
@@ -2698,7 +2698,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "NDT3055L"
+			(property "Value" "DMN10H220L"
 				(at 5.08 0 0)
 				(effects
 					(font
@@ -2707,7 +2707,7 @@
 					(justify left)
 				)
 			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 				(at 5.08 -1.905 0)
 				(effects
 					(font
@@ -2718,7 +2718,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/ndt3055l-d.pdf"
+			(property "Datasheet" "http://www.diodes.com/assets/Datasheets/DMN10H220L.pdf"
 				(at 5.08 -3.81 0)
 				(effects
 					(font
@@ -2728,7 +2728,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "4A Id, 60V Vds, N-Channel Logic Level Enhancement Mode MOSFET, SOT-223"
+			(property "Description" "1.6A Id, 100V Vds, N-Channel MOSFET, SOT-23"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2737,7 +2737,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_keywords" "n channel fet"
+			(property "ki_keywords" "N-Channel MOSFET"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2746,7 +2746,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOT?223*"
+			(property "ki_fp_filters" "SOT?23*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -2755,7 +2755,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "NDT3055L_0_1"
+			(symbol "DMN10H220L_0_1"
 				(polyline
 					(pts
 						(xy 0.254 1.905) (xy 0.254 -1.905)
@@ -2922,7 +2922,7 @@
 					)
 				)
 			)
-			(symbol "NDT3055L_1_1"
+			(symbol "DMN10H220L_1_1"
 				(pin input line
 					(at -5.08 0 0)
 					(length 2.54)
@@ -2951,7 +2951,7 @@
 							)
 						)
 					)
-					(number "2"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2969,7 +2969,7 @@
 							)
 						)
 					)
-					(number "3"
+					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3190,6 +3190,12 @@
 		(uuid "1a111978-eddc-4da3-a04f-d488c372741d")
 	)
 	(junction
+		(at 44.45 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2347ee0b-a83f-4e04-add8-2b5a89e5fae0")
+	)
+	(junction
 		(at 96.52 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3202,12 +3208,6 @@
 		(uuid "5a293e40-b5e7-4852-a9f1-4c3616ae3301")
 	)
 	(junction
-		(at 208.28 49.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5ea3eb54-016b-4104-a8a5-99415d0b5938")
-	)
-	(junction
 		(at 234.95 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3218,6 +3218,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "624ce5d8-0884-4ca3-8a3c-e4d2649100f3")
+	)
+	(junction
+		(at 46.99 115.57)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "659e7939-8ca6-45b7-9b0d-417fe8d68b9c")
 	)
 	(junction
 		(at 99.06 49.53)
@@ -3351,16 +3357,6 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 35.56) (xy 33.02 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0b6ee667-bf80-4e14-88db-261a0918ba40")
-	)
-	(wire
-		(pts
 			(xy 149.86 82.55) (xy 158.75 82.55)
 		)
 		(stroke
@@ -3368,6 +3364,16 @@
 			(type default)
 		)
 		(uuid "102884d0-a3ed-41fb-a7f6-742b18798b49")
+	)
+	(wire
+		(pts
+			(xy 36.83 29.21) (xy 36.83 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10afb381-3cd1-4689-8850-dd1c5ed06900")
 	)
 	(wire
 		(pts
@@ -3451,7 +3457,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 49.53) (xy 236.22 49.53)
+			(xy 191.77 49.53) (xy 236.22 49.53)
 		)
 		(stroke
 			(width 0)
@@ -3551,16 +3557,6 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 49.53) (xy 208.28 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3f984293-50df-4a89-8d2f-3cee0be295b4")
-	)
-	(wire
-		(pts
 			(xy 149.86 107.95) (xy 166.37 107.95)
 		)
 		(stroke
@@ -3611,13 +3607,13 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 29.21) (xy 60.96 29.21)
+			(xy 20.32 123.19) (xy 20.32 115.57)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4e0d7f73-ed60-4085-a571-176119e42988")
+		(uuid "4d100562-a395-4c17-b94f-c1052b4f4ed7")
 	)
 	(wire
 		(pts
@@ -3701,7 +3697,17 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 99.06) (xy 237.49 99.06)
+			(xy 269.24 83.82) (xy 269.24 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a43c211-01a3-407d-a2dd-c6b71d7bc49a")
+	)
+	(wire
+		(pts
+			(xy 234.95 99.06) (xy 256.54 99.06)
 		)
 		(stroke
 			(width 0)
@@ -3741,6 +3747,16 @@
 	)
 	(wire
 		(pts
+			(xy 20.32 115.57) (xy 46.99 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79ac38c2-8cc4-438b-872f-583b25591f0f")
+	)
+	(wire
+		(pts
 			(xy 149.86 57.15) (xy 165.1 57.15)
 		)
 		(stroke
@@ -3761,23 +3777,13 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 29.21) (xy 33.02 29.21)
+			(xy 264.16 83.82) (xy 269.24 83.82)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7ea49baa-e49e-4c67-a6fc-43ec0d3284bd")
-	)
-	(wire
-		(pts
-			(xy 245.11 99.06) (xy 256.54 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7ecad16c-e5e3-49cb-b038-51806261ede8")
+		(uuid "88f82af0-7db8-4fc8-a97e-920b651c9da1")
 	)
 	(wire
 		(pts
@@ -3811,6 +3817,16 @@
 	)
 	(wire
 		(pts
+			(xy 44.45 123.19) (xy 44.45 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "95a55ac3-09c8-4d45-8a7a-b5f969d254d3")
+	)
+	(wire
+		(pts
 			(xy 96.52 80.01) (xy 96.52 97.79)
 		)
 		(stroke
@@ -3841,7 +3857,7 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 92.71) (xy 46.99 133.35)
+			(xy 46.99 92.71) (xy 46.99 115.57)
 		)
 		(stroke
 			(width 0)
@@ -3951,13 +3967,33 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 135.89) (xy 44.45 90.17)
+			(xy 256.54 83.82) (xy 256.54 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba90ef4b-e2d7-4df3-9287-cd215b0854ac")
+	)
+	(wire
+		(pts
+			(xy 44.45 135.89) (xy 44.45 123.19)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "c79dc331-b52b-465e-9eb7-43ec879bd2ad")
+	)
+	(wire
+		(pts
+			(xy 46.99 115.57) (xy 46.99 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9d89761-4447-49c0-a267-6cb4ceeb5042")
 	)
 	(wire
 		(pts
@@ -3978,6 +4014,16 @@
 			(type default)
 		)
 		(uuid "cb43df7b-7388-48ed-9f50-dae2315e1b68")
+	)
+	(wire
+		(pts
+			(xy 31.75 123.19) (xy 44.45 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ce49a919-a583-41b9-965b-f16f073cc72c")
 	)
 	(wire
 		(pts
@@ -4031,13 +4077,13 @@
 	)
 	(wire
 		(pts
-			(xy 256.54 81.28) (xy 256.54 85.09)
+			(xy 36.83 31.75) (xy 26.67 31.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e5355eb0-e0dd-4501-b834-f516b6110b2f")
+		(uuid "eba7b11b-38b3-445f-afbc-a8177d7f8ce7")
 	)
 	(wire
 		(pts
@@ -4068,6 +4114,16 @@
 			(type default)
 		)
 		(uuid "ee1aafd3-f1b9-4710-8e92-ca3191546c8c")
+	)
+	(wire
+		(pts
+			(xy 36.83 29.21) (xy 60.96 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee460e6b-38f9-4437-889f-233db1c183d8")
 	)
 	(wire
 		(pts
@@ -4108,16 +4164,6 @@
 			(type default)
 		)
 		(uuid "f5a280f9-0aa6-4e4a-95e7-0aad400b5498")
-	)
-	(wire
-		(pts
-			(xy 26.67 31.75) (xy 33.02 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f6b2e4b1-8d97-4cbd-b4d2-013a78275fc2")
 	)
 	(wire
 		(pts
@@ -4192,7 +4238,7 @@
 	)
 	(hierarchical_label "VBAT"
 		(shape input)
-		(at 256.54 81.28 90)
+		(at 269.24 82.55 90)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4288,17 +4334,6 @@
 			(justify right)
 		)
 		(uuid "5d9c3e60-9df4-4a7e-a7d6-db446f1a82f1")
-	)
-	(hierarchical_label "nFAULT"
-		(shape output)
-		(at 26.67 35.56 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "63983402-2f5f-4218-9a43-5fc6adfa5522")
 	)
 	(hierarchical_label "3V3"
 		(shape input)
@@ -4409,17 +4444,6 @@
 			(justify left)
 		)
 		(uuid "d045aa3b-fcad-4f32-aee6-ccd21e1bb976")
-	)
-	(hierarchical_label "Power EN"
-		(shape input)
-		(at 26.67 29.21 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "e2a3cc70-f498-47e6-b068-695f15f734a7")
 	)
 	(hierarchical_label "UART"
 		(shape bidirectional)
@@ -4540,6 +4564,22 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 166.37 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 166.37 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "1f3aea1c-abba-45d2-b19b-d1023360a33a")
 		)
@@ -4550,6 +4590,111 @@
 			(project "stm32_radio"
 				(path "/432d5beb-0309-422b-bb62-0445459d5147/82a54007-c0d7-46a9-b428-a3b457e9b553"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "LED_2")
+		(lib_id "Device:LED")
+		(at 31.75 127 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0f441632-7399-40c4-8c0f-258ce84a5483")
+		(property "Reference" "D6"
+			(at 35.56 127.3174 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Green"
+			(at 35.56 129.8574 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 31.75 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 31.75 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 31.75 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 31.75 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C84260"
+			(at 31.75 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 31.75 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 31.75 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "0a08a913-9bd0-4c8e-850e-9a61bdc2fb8c")
+		)
+		(pin "1"
+			(uuid "2c65144e-1f6d-4c68-9cd8-ca062fd001b5")
+		)
+		(instances
+			(project "stm32_radio"
+				(path "/432d5beb-0309-422b-bb62-0445459d5147/82a54007-c0d7-46a9-b428-a3b457e9b553"
+					(reference "D6")
 					(unit 1)
 				)
 			)
@@ -4617,6 +4762,22 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 80.01 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 80.01 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -4696,6 +4857,22 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 86.36 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 86.36 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -4842,6 +5019,22 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 127 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 127 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "44"
@@ -5065,6 +5258,22 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 234.95 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 234.95 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "55c2bc0e-9686-47c1-a691-bcf07e7d2f2e")
 		)
@@ -5210,6 +5419,22 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 142.24 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 142.24 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "e5e26570-2a56-4594-9a35-add8ccec3fc1")
 		)
@@ -5220,6 +5445,101 @@
 			(project "stm32_radio"
 				(path "/432d5beb-0309-422b-bb62-0445459d5147/82a54007-c0d7-46a9-b428-a3b457e9b553"
 					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 20.32 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2f12ddad-e31c-4c30-9198-2fe613cce21e")
+		(property "Reference" "R5"
+			(at 22.86 133.3499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "470"
+			(at 22.86 135.8899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 18.542 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 20.32 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 20.32 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2907267"
+			(at 20.32 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 20.32 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 20.32 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "efb092d3-a24e-42a2-96d0-8989128fb4ea")
+		)
+		(pin "2"
+			(uuid "8c63d568-b962-4985-a3d9-fce2c830709a")
+		)
+		(instances
+			(project "stm32_radio"
+				(path "/432d5beb-0309-422b-bb62-0445459d5147/82a54007-c0d7-46a9-b428-a3b457e9b553"
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -5486,6 +5806,22 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 245.11 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 245.11 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "202f868f-2872-4c5c-9128-ec35ea6032ef")
 		)
@@ -5496,85 +5832,6 @@
 			(project "stm32_radio"
 				(path "/432d5beb-0309-422b-bb62-0445459d5147/82a54007-c0d7-46a9-b428-a3b457e9b553"
 					(reference "R12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 208.28 60.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3ee99047-3f99-4a09-8bb9-702dbb14d94f")
-		(property "Reference" "R13"
-			(at 210.82 59.6899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470"
-			(at 210.82 62.2299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 206.502 60.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 208.28 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 208.28 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C2907267"
-			(at 208.28 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "eaca2380-3248-4cb1-8685-de707455bee1")
-		)
-		(pin "2"
-			(uuid "32d20ffe-41d2-4421-9c08-1b382eaf5907")
-		)
-		(instances
-			(project "stm32_radio"
-				(path "/432d5beb-0309-422b-bb62-0445459d5147/82a54007-c0d7-46a9-b428-a3b457e9b553"
-					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -5647,105 +5904,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 208.28 53.34 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "475e9fef-ba5d-4e9a-b090-d2ddfd29647a")
-		(property "Reference" "D8"
-			(at 212.09 53.6574 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "Green"
-			(at 212.09 56.1974 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
-			(at 208.28 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 208.28 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 208.28 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 208.28 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C84260"
-			(at 208.28 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "d8d6fae9-cc21-44bd-b46f-5a013a160f71")
-		)
-		(pin "1"
-			(uuid "08a837cd-dc70-496f-8c64-4bdf146b2799")
-		)
-		(instances
-			(project "stm32_radio"
-				(path "/432d5beb-0309-422b-bb62-0445459d5147/82a54007-c0d7-46a9-b428-a3b457e9b553"
-					(reference "D8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 208.28 64.77 0)
+		(at 20.32 138.43 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "478ef128-b532-4d62-8a3e-03c111d51f6e")
-		(property "Reference" "#PWR032"
-			(at 208.28 71.12 0)
+		(uuid "4d00ec13-95d6-4746-b605-e2d1210a9027")
+		(property "Reference" "#PWR026"
+			(at 20.32 144.78 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5754,7 +5923,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 208.28 69.85 0)
+			(at 20.32 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5762,7 +5931,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 208.28 64.77 0)
+			(at 20.32 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5771,7 +5940,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 208.28 64.77 0)
+			(at 20.32 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5780,7 +5949,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 208.28 64.77 0)
+			(at 20.32 138.43 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5789,12 +5958,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "604611c4-181f-4ad8-8de6-f20561746043")
+			(uuid "964dcc3d-51dc-406f-a2f1-4418e224d752")
 		)
 		(instances
 			(project "stm32_radio"
 				(path "/432d5beb-0309-422b-bb62-0445459d5147/82a54007-c0d7-46a9-b428-a3b457e9b553"
-					(reference "#PWR032")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
@@ -5996,6 +6165,22 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 163.83 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 163.83 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "b8cf4eaf-f7e3-404e-ad1b-44334c5825cd")
 		)
@@ -6078,6 +6263,22 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 177.8 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 177.8 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "9510282f-e5a2-41f1-952a-0437af6d4607")
 		)
@@ -6157,6 +6358,22 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 52.07 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 52.07 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "a556cfeb-c428-4d90-adb0-92d81c954589")
 		)
@@ -6167,6 +6384,106 @@
 			(project ""
 				(path "/432d5beb-0309-422b-bb62-0445459d5147/82a54007-c0d7-46a9-b428-a3b457e9b553"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_FET:DMN10H220L")
+		(at 170.18 54.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "78961f8f-c647-41e3-b9f0-436a32f26211")
+		(property "Reference" "Q2"
+			(at 176.53 53.3399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DMN1019USN-7"
+			(at 176.53 55.8799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 175.26 56.515 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.diodes.com/assets/Datasheets/DMN10H220L.pdf"
+			(at 175.26 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "1.6A Id, 100V Vds, N-Channel MOSFET, SOT-23"
+			(at 170.18 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 170.18 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 170.18 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C145103"
+			(at 170.18 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "ca89add0-54b1-4ec5-aa8e-ab008ce0cb3d")
+		)
+		(pin "3"
+			(uuid "bd432c32-6863-4fc7-9ab0-4abf365f2efe")
+		)
+		(pin "1"
+			(uuid "7b906786-9d91-45ea-b081-e149b7bc141e")
+		)
+		(instances
+			(project ""
+				(path "/432d5beb-0309-422b-bb62-0445459d5147/82a54007-c0d7-46a9-b428-a3b457e9b553"
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -6312,6 +6629,22 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 166.37 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 166.37 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "c808d4dd-dc78-4cf1-adc9-a7ff2ac86cec")
 		)
@@ -6322,6 +6655,111 @@
 			(project "stm32_radio"
 				(path "/432d5beb-0309-422b-bb62-0445459d5147/82a54007-c0d7-46a9-b428-a3b457e9b553"
 					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "LED_1")
+		(lib_id "Device:LED")
+		(at 20.32 127 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "81ee1460-a498-4797-ba0f-f67acd566095")
+		(property "Reference" "D5"
+			(at 24.13 127.3174 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "Green"
+			(at 24.13 129.8574 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
+			(at 20.32 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 20.32 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 20.32 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 20.32 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C84260"
+			(at 20.32 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 20.32 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 20.32 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "ea301b65-e828-4864-9dca-1fd197ab1586")
+		)
+		(pin "1"
+			(uuid "22e38a29-0cbf-4466-8fe4-768a4aecc4ac")
+		)
+		(instances
+			(project "stm32_radio"
+				(path "/432d5beb-0309-422b-bb62-0445459d5147/82a54007-c0d7-46a9-b428-a3b457e9b553"
+					(reference "D5")
 					(unit 1)
 				)
 			)
@@ -6389,6 +6827,22 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 254 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 254 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -6539,6 +6993,22 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 125.73 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 125.73 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "2393e0a8-c26f-4bd6-8c1a-7c36ab7faf1e")
 		)
@@ -6549,91 +7019,6 @@
 			(project "stm32_radio"
 				(path "/432d5beb-0309-422b-bb62-0445459d5147/82a54007-c0d7-46a9-b428-a3b457e9b553"
 					(reference "C10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Transistor_FET:NDT3055L")
-		(at 170.18 54.61 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9a31d62b-8911-45d1-9704-e2aa47d1b20b")
-		(property "Reference" "Q1"
-			(at 176.53 53.3399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "???"
-			(at 176.53 55.8799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 175.26 56.515 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/ndt3055l-d.pdf"
-			(at 175.26 58.42 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "4A Id, 60V Vds, N-Channel Logic Level Enhancement Mode MOSFET, SOT-223"
-			(at 170.18 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C145103"
-			(at 170.18 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "1724fa22-dd35-442e-975d-79c891557ea0")
-		)
-		(pin "1"
-			(uuid "4255e370-0eb6-4b90-8637-6bb6f0b60c69")
-		)
-		(pin "2"
-			(uuid "1c69b36a-b201-44c1-a418-38dbe89bd906")
-		)
-		(instances
-			(project "stm32_radio"
-				(path "/432d5beb-0309-422b-bb62-0445459d5147/82a54007-c0d7-46a9-b428-a3b457e9b553"
-					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -6710,6 +7095,22 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 187.96 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 187.96 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -6789,6 +7190,22 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 168.91 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 168.91 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "fa8e2c9e-10e5-4cc1-b40c-923e36930ed5")
 		)
@@ -6799,6 +7216,72 @@
 			(project ""
 				(path "/432d5beb-0309-422b-bb62-0445459d5147/82a54007-c0d7-46a9-b428-a3b457e9b553"
 					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 31.75 138.43 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a341b322-b626-4e20-bd03-7ed2485f5991")
+		(property "Reference" "#PWR027"
+			(at 31.75 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 31.75 143.51 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 31.75 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 31.75 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7da4a2b6-34e3-435b-af00-b917bba5d9c4")
+		)
+		(instances
+			(project "stm32_radio"
+				(path "/432d5beb-0309-422b-bb62-0445459d5147/82a54007-c0d7-46a9-b428-a3b457e9b553"
+					(reference "#PWR027")
 					(unit 1)
 				)
 			)
@@ -6934,6 +7417,22 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 45.72 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 45.72 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "b446fb32-b0b0-41c1-b97e-d72af21c1a6a")
 		)
@@ -7011,6 +7510,22 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 153.67 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 153.67 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -7092,6 +7607,22 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 114.3 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 114.3 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "5849e361-50e4-4301-abb4-b5ba95fe7c74")
 		)
@@ -7169,6 +7700,22 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 91.44 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 91.44 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -7316,6 +7863,22 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 102.87 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 102.87 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "9360d386-7486-40c4-86ba-e1bb655342f4")
 		)
@@ -7405,6 +7968,22 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 177.8 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 177.8 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "7cd6b883-b85c-4ce2-ad96-58a528b088f4")
 		)
@@ -7482,6 +8061,22 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 99.06 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 99.06 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -7694,6 +8289,22 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 187.96 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 187.96 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -7910,6 +8521,101 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 31.75 134.62 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dac9e082-60c5-4119-9fe3-4059d1bc3d0c")
+		(property "Reference" "R6"
+			(at 34.29 133.3499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "470"
+			(at 34.29 135.8899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
+			(at 29.972 134.62 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 31.75 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 31.75 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C2907267"
+			(at 31.75 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 31.75 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 31.75 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f4446dcc-8d9e-4426-845b-ba1c1bfa5267")
+		)
+		(pin "2"
+			(uuid "496162eb-f458-4205-89fe-254176aba06a")
+		)
+		(instances
+			(project "stm32_radio"
+				(path "/432d5beb-0309-422b-bb62-0445459d5147/82a54007-c0d7-46a9-b428-a3b457e9b553"
+					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 68.58 157.48 0)
 		(unit 1)
@@ -7971,6 +8677,22 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 68.58 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 68.58 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -8182,6 +8904,22 @@
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 57.15 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 57.15 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "2"
@@ -8458,6 +9196,22 @@
 				(hide yes)
 			)
 		)
+		(property "Sim.Device" ""
+			(at 72.39 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 72.39 62.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "77162d60-2b41-49b8-9204-ebdd60b75875")
 		)
@@ -8481,7 +9235,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 241.3 99.06 90)
+		(at 260.35 83.82 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8491,7 +9245,7 @@
 		(fields_autoplaced yes)
 		(uuid "fdb435cf-b8e8-4c6a-ae44-54264afb3b11")
 		(property "Reference" "R11"
-			(at 241.3 92.71 90)
+			(at 260.35 77.47 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8499,7 +9253,7 @@
 			)
 		)
 		(property "Value" "20k"
-			(at 241.3 95.25 90)
+			(at 260.35 80.01 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8507,7 +9261,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 241.3 97.282 90)
+			(at 260.35 82.042 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8516,7 +9270,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 241.3 99.06 0)
+			(at 260.35 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8525,7 +9279,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 241.3 99.06 0)
+			(at 260.35 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8534,12 +9288,28 @@
 			)
 		)
 		(property "LCSC" "C114566"
-			(at 241.3 99.06 0)
+			(at 260.35 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 260.35 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" ""
+			(at 260.35 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "1"
@@ -8619,88 +9389,6 @@
 				(path "/432d5beb-0309-422b-bb62-0445459d5147/82a54007-c0d7-46a9-b428-a3b457e9b553"
 					(reference "#PWR07")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(sheet
-		(at 33.02 25.4)
-		(size 22.86 12.7)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "00bd8418-3ac1-4eac-b562-b0c06574d507")
-		(property "Sheetname" "LSW"
-			(at 33.02 24.6884 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "lsw.kicad_sch"
-			(at 33.02 38.6846 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "OUT+" output
-			(at 55.88 29.21 0)
-			(uuid "96da8435-620f-4509-9fa5-4ff7b1f90141")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "EN" input
-			(at 33.02 29.21 180)
-			(uuid "785a22bc-4ff0-4f7f-90e4-a69ea3e29a38")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "INPUT +3.3V" input
-			(at 33.02 31.75 180)
-			(uuid "8d3fd91c-e4b8-46a1-abba-6db0810b2237")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "nFAULT" output
-			(at 33.02 35.56 180)
-			(uuid "ee807a32-4966-43c5-aca9-5ce518395e05")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(instances
-			(project "stm32_radio"
-				(path "/432d5beb-0309-422b-bb62-0445459d5147/82a54007-c0d7-46a9-b428-a3b457e9b553"
-					(page "4")
 				)
 			)
 		)

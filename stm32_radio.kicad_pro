@@ -585,8 +585,8 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "",
-      "pos_files": "./",
+      "plot": "gerberek/",
+      "pos_files": "gerberek/",
       "specctra_dsn": "",
       "step": "",
       "svg": "",
@@ -755,10 +755,6 @@
     [
       "8fe9bd28-3ac0-4fd7-b117-fca1c7e85d65",
       "RF out"
-    ],
-    [
-      "00bd8418-3ac1-4eac-b562-b0c06574d507",
-      "LSW"
     ]
   ],
   "text_variables": {}
