@@ -864,7 +864,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-manual.pdf"
+			(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
 				(at 0 -12.7 0)
 				(effects
 					(font
@@ -1740,8 +1740,12 @@
 		)
 		(symbol "power:GND"
 			(power)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1817,8 +1821,7 @@
 				(pin power_in line
 					(at 0 0 270)
 					(length 0)
-					(hide yes)
-					(name "GND"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1836,18 +1839,113 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(junction
 		(at 106.68 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0ab23edd-cde9-485a-ab48-5ab65b6115ea")
-	)
-	(junction
-		(at 122.5804 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1105c535-cf76-4b15-bd49-c7874d61d168")
 	)
 	(junction
 		(at 118.11 99.06)
@@ -1862,10 +1960,22 @@
 		(uuid "263aa7c1-2685-4cbf-91e4-c8bee77eabd8")
 	)
 	(junction
+		(at 120.65 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5738bd19-8ec0-46ab-b4fd-b31595405d1b")
+	)
+	(junction
 		(at 106.68 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "66f06a98-1e9c-4a67-adc5-ae84346c6b73")
+	)
+	(junction
+		(at 118.11 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7b17d20e-914d-499e-b280-5212fd1d46c9")
 	)
 	(junction
 		(at 157.48 78.74)
@@ -1896,16 +2006,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f2cfaf4b-e4e3-41fd-9487-7174ccefb42e")
-	)
-	(wire
-		(pts
-			(xy 123.19 86.36) (xy 122.5804 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "036cfacd-ec72-4981-9b32-dacb23b99c78")
 	)
 	(wire
 		(pts
@@ -1989,6 +2089,16 @@
 	)
 	(wire
 		(pts
+			(xy 120.65 82.55) (xy 123.19 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f18f8c3-b9a9-4bd8-807f-2cb76f390270")
+	)
+	(wire
+		(pts
 			(xy 91.44 78.74) (xy 96.52 78.74)
 		)
 		(stroke
@@ -2039,7 +2149,17 @@
 	)
 	(wire
 		(pts
-			(xy 122.5804 82.55) (xy 123.19 82.55)
+			(xy 120.65 86.36) (xy 120.65 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5e7438c2-76b0-43e1-98c0-5a2ef54dee00")
+	)
+	(wire
+		(pts
+			(xy 118.11 82.55) (xy 120.65 82.55)
 		)
 		(stroke
 			(width 0)
@@ -2059,13 +2179,23 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 90.17) (xy 118.11 99.06)
+			(xy 118.11 90.17) (xy 118.11 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "6c78d744-6a57-4d68-b358-4f9baee1639e")
+	)
+	(wire
+		(pts
+			(xy 123.19 86.36) (xy 120.65 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6fb74b21-e9d1-4a9d-aacb-a4aee4366622")
 	)
 	(wire
 		(pts
@@ -2086,6 +2216,16 @@
 			(type default)
 		)
 		(uuid "7b9e32eb-1fd0-44b4-8848-69a9399a2705")
+	)
+	(wire
+		(pts
+			(xy 118.11 92.71) (xy 118.11 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83da8b01-ea03-4f41-8175-6408b51aeac8")
 	)
 	(wire
 		(pts
@@ -2116,16 +2256,6 @@
 			(type default)
 		)
 		(uuid "a6d25b6a-3ac0-4776-87c9-bf88e24cced7")
-	)
-	(wire
-		(pts
-			(xy 118.11 82.55) (xy 122.5804 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ae21656f-120b-4e31-bd79-e626b2647997")
 	)
 	(wire
 		(pts
@@ -2229,16 +2359,6 @@
 	)
 	(wire
 		(pts
-			(xy 122.5804 86.36) (xy 122.5804 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e953ce13-781a-4ee6-97cd-04948c94641b")
-	)
-	(wire
-		(pts
 			(xy 113.03 78.74) (xy 118.11 78.74)
 		)
 		(stroke
@@ -2287,7 +2407,17 @@
 		)
 		(uuid "fbaec895-c1eb-402f-8b22-9193e6e71c9d")
 	)
-	(label "nFault"
+	(label "nFAULT"
+		(at 118.11 71.12 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9f57d39a-4366-46fb-abdc-e7c8438e7d34")
+	)
+	(label "nFAULT"
 		(at 151.13 104.14 0)
 		(effects
 			(font
@@ -2296,16 +2426,6 @@
 			(justify left bottom)
 		)
 		(uuid "a305d939-cec8-4188-b5d0-f0f0df64e8e3")
-	)
-	(label "nFault"
-		(at 118.11 71.12 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b7077a59-9979-4dbd-af5c-4ce2976eb68d")
 	)
 	(hierarchical_label "EN"
 		(shape input)
@@ -2403,6 +2523,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -2467,6 +2588,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "LCSC" "C95781"
+			(at 96.52 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -2538,6 +2668,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C48579599"
+			(at 113.03 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c7ada676-9751-4d33-8ae7-8513a865239a")
 		)
@@ -2602,6 +2741,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "LCSC" "C17455"
+			(at 133.35 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -2671,6 +2819,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -2680,6 +2829,73 @@
 			(project "stm32_radio"
 				(path "/432d5beb-0309-422b-bb62-0445459d5147/82a54007-c0d7-46a9-b428-a3b457e9b553/00bd8418-3ac1-4eac-b562-b0c06574d507"
 					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 118.11 92.71 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2d165035-63a5-46f8-ba4c-48e507cbb1b1")
+		(property "Reference" "#FLG06"
+			(at 120.015 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 121.92 92.7099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 118.11 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 118.11 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 118.11 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f7aeb375-3cb5-4631-88db-a48db5a5a99e")
+		)
+		(instances
+			(project "stm32_radio"
+				(path "/432d5beb-0309-422b-bb62-0445459d5147/82a54007-c0d7-46a9-b428-a3b457e9b553/00bd8418-3ac1-4eac-b562-b0c06574d507"
+					(reference "#FLG06")
 					(unit 1)
 				)
 			)
@@ -2737,6 +2953,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "LCSC" "C114523"
+			(at 157.48 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "2"
@@ -2811,6 +3036,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C154510"
+			(at 106.68 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "90bffe83-455b-42d0-9549-db6e50c9fa22")
 		)
@@ -2883,6 +3117,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C3009137"
+			(at 96.52 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "6cfd98f4-3129-4ea7-a1f4-c2d3622c695b")
 		)
@@ -2947,6 +3190,15 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(property "LCSC" "C2680358"
+			(at 121.92 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
 		)
 		(pin "3"
@@ -3029,6 +3281,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C3009137"
+			(at 118.11 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "db3c3382-a279-4dda-bd39-470bd141f059")
 		)
@@ -3039,6 +3300,72 @@
 			(project "stm32_radio"
 				(path "/432d5beb-0309-422b-bb62-0445459d5147/82a54007-c0d7-46a9-b428-a3b457e9b553/00bd8418-3ac1-4eac-b562-b0c06574d507"
 					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 120.65 82.55 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "803d3e55-7b2e-4d65-8f28-1d0bd4f60085")
+		(property "Reference" "#FLG01"
+			(at 120.65 80.645 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 120.65 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 120.65 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 120.65 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 120.65 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6c54812e-80ab-4646-842f-90cef6a40b04")
+		)
+		(instances
+			(project ""
+				(path "/432d5beb-0309-422b-bb62-0445459d5147/82a54007-c0d7-46a9-b428-a3b457e9b553/00bd8418-3ac1-4eac-b562-b0c06574d507"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -3097,6 +3424,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C5144142"
+			(at 151.13 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "c69e6820-42c4-4de2-8e30-da7c3610feb2")
 		)
@@ -3140,7 +3476,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-3"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
 			(at 153.67 107.95 0)
 			(effects
 				(font
@@ -3149,7 +3485,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-manual.pdf"
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_MOSFETs"
 			(at 148.59 123.19 0)
 			(effects
 				(font
@@ -3158,12 +3494,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "N-MOSFET transistor, drain/source/gate"
 			(at 148.59 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Device" "NMOS"
@@ -3186,6 +3523,15 @@
 		)
 		(property "Sim.Pins" "1=D 2=G 3=S"
 			(at 148.59 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C145103"
+			(at 148.59 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3263,6 +3609,15 @@
 				)
 			)
 		)
+		(property "LCSC" "C5144142"
+			(at 110.49 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "495ece8c-239e-4592-9e56-1a5efec0d33c")
 		)
@@ -3330,9 +3685,19 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 157.48 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC" "C84260"
 			(at 157.48 90.17 0)
 			(effects
 				(font
@@ -3400,12 +3765,13 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
 			(at 157.48 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"
@@ -3471,6 +3837,7 @@
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(pin "1"

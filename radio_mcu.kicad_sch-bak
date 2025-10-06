@@ -681,202 +681,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:Q_NPN"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Q4"
-				(at 5.08 1.2701 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "Q_NPN"
-				(at 5.08 -1.2699 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-				(at 5.08 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "NPN bipolar junction transistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "BJT"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Q_NPN_0_1"
-				(polyline
-					(pts
-						(xy -2.54 0) (xy 0.635 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 1.905) (xy 0.635 -1.905)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 0.635) (xy 2.54 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 -0.635) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 1.27 0)
-					(radius 2.8194)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -1.778) (xy 1.778 -1.27) (xy 2.286 -2.286) (xy 1.27 -1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "Q_NPN_1_1"
-				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "C"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "E"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:R"
 			(pin_numbers
 				(hide yes)
@@ -3190,6 +2994,12 @@
 		(uuid "1a111978-eddc-4da3-a04f-d488c372741d")
 	)
 	(junction
+		(at 191.77 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1b79f30d-2c6d-4ca1-ab40-5b5b909b8911")
+	)
+	(junction
 		(at 96.52 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3202,22 +3012,10 @@
 		(uuid "5a293e40-b5e7-4852-a9f1-4c3616ae3301")
 	)
 	(junction
-		(at 208.28 49.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5ea3eb54-016b-4104-a8a5-99415d0b5938")
-	)
-	(junction
 		(at 234.95 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "612dc3b0-2b51-4412-ae7f-fb3bdfa03cc9")
-	)
-	(junction
-		(at 191.77 49.53)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "624ce5d8-0884-4ca3-8a3c-e4d2649100f3")
 	)
 	(junction
 		(at 99.06 49.53)
@@ -3451,16 +3249,6 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 49.53) (xy 236.22 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "24316744-6268-498b-a939-54c5b0b6f8e0")
-	)
-	(wire
-		(pts
 			(xy 172.72 49.53) (xy 191.77 49.53)
 		)
 		(stroke
@@ -3551,13 +3339,23 @@
 	)
 	(wire
 		(pts
-			(xy 191.77 49.53) (xy 208.28 49.53)
+			(xy 191.77 53.34) (xy 208.28 53.34)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "3f984293-50df-4a89-8d2f-3cee0be295b4")
+	)
+	(wire
+		(pts
+			(xy 191.77 49.53) (xy 191.77 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4129de41-e884-415e-abc6-e6fcc48987eb")
 	)
 	(wire
 		(pts
@@ -3631,7 +3429,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 72.39) (xy 237.49 90.17)
+			(xy 237.49 72.39) (xy 237.49 91.44)
 		)
 		(stroke
 			(width 0)
@@ -3701,7 +3499,7 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 99.06) (xy 237.49 99.06)
+			(xy 234.95 99.06) (xy 238.76 99.06)
 		)
 		(stroke
 			(width 0)
@@ -3771,16 +3569,6 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 99.06) (xy 256.54 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7ecad16c-e5e3-49cb-b038-51806261ede8")
-	)
-	(wire
-		(pts
 			(xy 149.86 77.47) (xy 205.74 77.47)
 		)
 		(stroke
@@ -3808,6 +3596,16 @@
 			(type default)
 		)
 		(uuid "91f49af3-393d-43a3-bdc5-b71542ccd505")
+	)
+	(wire
+		(pts
+			(xy 256.54 99.06) (xy 246.38 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9531a3fd-b0f3-4670-90f9-a3a9a47fdc16")
 	)
 	(wire
 		(pts
@@ -3848,16 +3646,6 @@
 			(type default)
 		)
 		(uuid "9c42a969-2f6f-4ed9-80f3-4cfc14377112")
-	)
-	(wire
-		(pts
-			(xy 191.77 49.53) (xy 191.77 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9fcca47d-60ba-43d7-a536-cf57c3011d85")
 	)
 	(wire
 		(pts
@@ -4021,6 +3809,26 @@
 	)
 	(wire
 		(pts
+			(xy 237.49 91.44) (xy 248.92 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dca0873d-3169-42b1-b43d-780bcc90fc34")
+	)
+	(wire
+		(pts
+			(xy 191.77 68.58) (xy 191.77 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dde6dfe5-ff8d-4e89-a93a-2efef09bb980")
+	)
+	(wire
+		(pts
 			(xy 96.52 41.91) (xy 96.52 49.53)
 		)
 		(stroke
@@ -4031,7 +3839,7 @@
 	)
 	(wire
 		(pts
-			(xy 256.54 81.28) (xy 256.54 85.09)
+			(xy 256.54 81.28) (xy 256.54 86.36)
 		)
 		(stroke
 			(width 0)
@@ -4071,17 +3879,7 @@
 	)
 	(wire
 		(pts
-			(xy 241.3 90.17) (xy 237.49 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef75b3fe-26c2-4031-afe1-fe19bdd0d814")
-	)
-	(wire
-		(pts
-			(xy 256.54 95.25) (xy 256.54 99.06)
+			(xy 256.54 96.52) (xy 256.54 99.06)
 		)
 		(stroke
 			(width 0)
@@ -4423,7 +4221,7 @@
 	)
 	(hierarchical_label "UART"
 		(shape bidirectional)
-		(at 236.22 49.53 0)
+		(at 208.28 53.34 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4531,15 +4329,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2907267"
-			(at 166.37 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "1f3aea1c-abba-45d2-b19b-d1023360a33a")
 		)
@@ -4610,15 +4399,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C48579585"
-			(at 80.01 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "c871621f-9cc0-48af-b241-09c3126b252c")
 		)
@@ -4681,15 +4461,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 86.36 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C48579245"
 			(at 86.36 45.72 0)
 			(effects
 				(font
@@ -5020,7 +4791,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "R"
 			(at 232.41 106.6799 0)
 			(effects
 				(font
@@ -5048,15 +4819,6 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 234.95 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C84376"
 			(at 234.95 105.41 0)
 			(effects
 				(font
@@ -5193,15 +4955,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 142.24 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C48579597"
 			(at 142.24 157.48 0)
 			(effects
 				(font
@@ -5424,163 +5177,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 245.11 90.17 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3c57308c-61db-4c08-b021-5950d6a2a9bb")
-		(property "Reference" "R12"
-			(at 245.11 83.82 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100k"
-			(at 245.11 86.36 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 245.11 88.392 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 245.11 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 245.11 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C96346"
-			(at 245.11 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "202f868f-2872-4c5c-9128-ec35ea6032ef")
-		)
-		(pin "2"
-			(uuid "c665579d-7b9a-4e0a-a636-858475438efc")
-		)
-		(instances
-			(project "stm32_radio"
-				(path "/432d5beb-0309-422b-bb62-0445459d5147/82a54007-c0d7-46a9-b428-a3b457e9b553"
-					(reference "R12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 208.28 60.96 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3ee99047-3f99-4a09-8bb9-702dbb14d94f")
-		(property "Reference" "R13"
-			(at 210.82 59.6899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470"
-			(at 210.82 62.2299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 206.502 60.96 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 208.28 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 208.28 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C2907267"
-			(at 208.28 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "eaca2380-3248-4cb1-8685-de707455bee1")
-		)
-		(pin "2"
-			(uuid "32d20ffe-41d2-4421-9c08-1b382eaf5907")
-		)
-		(instances
-			(project "stm32_radio"
-				(path "/432d5beb-0309-422b-bb62-0445459d5147/82a54007-c0d7-46a9-b428-a3b457e9b553"
-					(reference "R13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 102.87 161.29 0)
 		(unit 1)
@@ -5641,160 +5237,6 @@
 			(project "stm32_radio"
 				(path "/432d5beb-0309-422b-bb62-0445459d5147/82a54007-c0d7-46a9-b428-a3b457e9b553"
 					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 208.28 53.34 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "475e9fef-ba5d-4e9a-b090-d2ddfd29647a")
-		(property "Reference" "D8"
-			(at 212.09 53.6574 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "Green"
-			(at 212.09 56.1974 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0805_2012Metric"
-			(at 208.28 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 208.28 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 208.28 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 208.28 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C84260"
-			(at 208.28 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "d8d6fae9-cc21-44bd-b46f-5a013a160f71")
-		)
-		(pin "1"
-			(uuid "08a837cd-dc70-496f-8c64-4bdf146b2799")
-		)
-		(instances
-			(project "stm32_radio"
-				(path "/432d5beb-0309-422b-bb62-0445459d5147/82a54007-c0d7-46a9-b428-a3b457e9b553"
-					(reference "D8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 208.28 64.77 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "478ef128-b532-4d62-8a3e-03c111d51f6e")
-		(property "Reference" "#PWR032"
-			(at 208.28 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 208.28 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 208.28 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 208.28 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 208.28 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "604611c4-181f-4ad8-8de6-f20561746043")
-		)
-		(instances
-			(project "stm32_radio"
-				(path "/432d5beb-0309-422b-bb62-0445459d5147/82a54007-c0d7-46a9-b428-a3b457e9b553"
-					(reference "#PWR032")
 					(unit 1)
 				)
 			)
@@ -5933,6 +5375,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Transistor_FET:NDT3055L")
+		(at 254 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5426fb04-4e1a-441a-8262-1f809aa19024")
+		(property "Reference" "Q4"
+			(at 260.35 90.1699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "NDT3055L"
+			(at 260.35 92.7099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
+			(at 259.08 93.345 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/ndt3055l-d.pdf"
+			(at 259.08 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "4A Id, 60V Vds, N-Channel Logic Level Enhancement Mode MOSFET, SOT-223"
+			(at 254 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "9ea60672-38c1-4516-8c9a-e21b59c85e82")
+		)
+		(pin "1"
+			(uuid "e06d6725-8511-4102-b908-222256291772")
+		)
+		(pin "2"
+			(uuid "90984749-59d7-4012-967f-db33f8c41144")
+		)
+		(instances
+			(project "stm32_radio"
+				(path "/432d5beb-0309-422b-bb62-0445459d5147/82a54007-c0d7-46a9-b428-a3b457e9b553"
+					(reference "Q4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x03_Pin")
 		(at 163.83 85.09 180)
 		(unit 1)
@@ -5979,15 +5497,6 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x03, script generated"
-			(at 163.83 85.09 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C49257"
 			(at 163.83 85.09 0)
 			(effects
 				(font
@@ -6069,15 +5578,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C2907267"
-			(at 177.8 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "1"
 			(uuid "9510282f-e5a2-41f1-952a-0437af6d4607")
 		)
@@ -6140,15 +5640,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 52.07 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C49326696"
 			(at 52.07 60.96 0)
 			(effects
 				(font
@@ -6303,15 +5794,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C84260"
-			(at 166.37 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "c808d4dd-dc78-4cf1-adc9-a7ff2ac86cec")
 		)
@@ -6322,88 +5804,6 @@
 			(project "stm32_radio"
 				(path "/432d5beb-0309-422b-bb62-0445459d5147/82a54007-c0d7-46a9-b428-a3b457e9b553"
 					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Q_NPN")
-		(at 254 90.17 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "83124357-daf0-42c4-a729-a325220e019b")
-		(property "Reference" "Q4"
-			(at 259.08 88.8999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Q_NPN"
-			(at 259.08 91.4399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 259.08 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 254 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "NPN bipolar junction transistor"
-			(at 254 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C39828"
-			(at 254 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "b84a5fee-2190-4e52-80f9-c7ce3a9f3951")
-		)
-		(pin "3"
-			(uuid "6f0c3c01-5f46-4ba4-961b-eecfb9ab2eeb")
-		)
-		(pin "1"
-			(uuid "ca7b20af-192f-4814-ade5-a7d2faed5e20")
-		)
-		(instances
-			(project ""
-				(path "/432d5beb-0309-422b-bb62-0445459d5147/82a54007-c0d7-46a9-b428-a3b457e9b553"
-					(reference "Q4")
 					(unit 1)
 				)
 			)
@@ -6530,15 +5930,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C48579585"
-			(at 125.73 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "2393e0a8-c26f-4bd6-8c1a-7c36ab7faf1e")
 		)
@@ -6573,7 +5964,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "???"
+		(property "Value" "NDT3055L"
 			(at 176.53 55.8799 0)
 			(effects
 				(font
@@ -6582,7 +5973,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-223-3_TabPin2"
 			(at 175.26 56.515 0)
 			(effects
 				(font
@@ -6604,15 +5995,6 @@
 			)
 		)
 		(property "Description" "4A Id, 60V Vds, N-Channel Logic Level Enhancement Mode MOSFET, SOT-223"
-			(at 170.18 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C145103"
 			(at 170.18 54.61 0)
 			(effects
 				(font
@@ -6703,15 +6085,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C84260"
-			(at 187.96 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "77c52abe-6ca5-4603-b05f-cee7a2660502")
 		)
@@ -6753,7 +6126,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SOD-323"
+		(property "Footprint" "Diode_SMD:D_2114_3652Metric"
 			(at 168.91 68.58 0)
 			(effects
 				(font
@@ -6772,15 +6145,6 @@
 			)
 		)
 		(property "Description" "Schottky diode"
-			(at 168.91 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C358488"
 			(at 168.91 68.58 0)
 			(effects
 				(font
@@ -6925,15 +6289,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C49326648"
-			(at 45.72 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "b446fb32-b0b0-41c1-b97e-d72af21c1a6a")
 		)
@@ -6996,15 +6351,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 153.67 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C48579597"
 			(at 153.67 157.48 0)
 			(effects
 				(font
@@ -7083,15 +6429,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C49326648"
-			(at 114.3 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "5849e361-50e4-4301-abb4-b5ba95fe7c74")
 		)
@@ -7154,15 +6491,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 91.44 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C48579643"
 			(at 91.44 157.48 0)
 			(effects
 				(font
@@ -7307,15 +6635,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C48579643"
-			(at 102.87 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "9360d386-7486-40c4-86ba-e1bb655342f4")
 		)
@@ -7396,15 +6715,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C84260"
-			(at 177.8 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "7cd6b883-b85c-4ce2-ad96-58a528b088f4")
 		)
@@ -7467,15 +6777,6 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 99.06 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C84376"
 			(at 99.06 44.45 0)
 			(effects
 				(font
@@ -7679,15 +6980,6 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 187.96 91.44 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C2907267"
 			(at 187.96 91.44 0)
 			(effects
 				(font
@@ -7964,15 +7256,6 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC" "C48579603"
-			(at 68.58 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "2"
 			(uuid "b3787558-0e1d-4ae4-afa5-1c45d75feaeb")
 		)
@@ -8167,15 +7450,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 57.15 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C48579599"
 			(at 57.15 157.48 0)
 			(effects
 				(font
@@ -8481,7 +7755,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 241.3 99.06 90)
+		(at 242.57 99.06 270)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -8491,15 +7765,15 @@
 		(fields_autoplaced yes)
 		(uuid "fdb435cf-b8e8-4c6a-ae44-54264afb3b11")
 		(property "Reference" "R11"
-			(at 241.3 92.71 90)
+			(at 242.57 92.71 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "20k"
-			(at 241.3 95.25 90)
+		(property "Value" "R"
+			(at 242.57 95.25 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8507,7 +7781,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0805_2012Metric"
-			(at 241.3 97.282 90)
+			(at 242.57 100.838 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8516,7 +7790,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 241.3 99.06 0)
+			(at 242.57 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8525,16 +7799,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 241.3 99.06 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC" "C114566"
-			(at 241.3 99.06 0)
+			(at 242.57 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)

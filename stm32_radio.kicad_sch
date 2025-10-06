@@ -1320,10 +1320,10 @@
 		(uuid "15ba45ab-c1c4-4fdd-93a1-1005f22dda6a")
 	)
 	(junction
-		(at 38.1 143.51)
+		(at 66.04 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "2603a62a-0f42-48ed-8382-4046e9c04391")
+		(uuid "53b009cd-b25e-48b8-a011-fb98f7d69255")
 	)
 	(junction
 		(at 38.1 134.62)
@@ -1402,10 +1402,6 @@
 		(uuid "21f0b440-1684-4428-99ed-ee8e95652524")
 	)
 	(no_connect
-		(at 60.96 62.23)
-		(uuid "2f19206d-0980-4f55-9f40-54ed0b353346")
-	)
-	(no_connect
 		(at 60.96 73.66)
 		(uuid "32d8ff4d-461f-4d0d-aebd-cf551c043dcc")
 	)
@@ -1416,10 +1412,6 @@
 	(no_connect
 		(at 60.96 106.68)
 		(uuid "72e90b3c-3f08-4a3a-9817-9b1e6d903afb")
-	)
-	(no_connect
-		(at 60.96 59.69)
-		(uuid "8cf14c33-fe34-459f-908e-37372e651714")
 	)
 	(no_connect
 		(at 60.96 76.2)
@@ -1475,7 +1467,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 143.51) (xy 38.1 144.78)
+			(xy 38.1 139.7) (xy 38.1 144.78)
 		)
 		(stroke
 			(width 0)
@@ -1772,16 +1764,6 @@
 			(type default)
 		)
 		(uuid "cd3d66cb-7b3b-40ae-b2a2-0915eb24fba7")
-	)
-	(wire
-		(pts
-			(xy 38.1 139.7) (xy 38.1 143.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d55ebc94-5921-4f4a-8314-3de51e04e8dd")
 	)
 	(wire
 		(pts
@@ -2209,6 +2191,138 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 66.04 110.49 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5a0b3552-1ec9-4494-802d-926ec3e23a09")
+		(property "Reference" "#FLG05"
+			(at 66.04 108.585 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 66.04 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 66.04 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 66.04 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 66.04 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "598b8642-ee81-4a3c-a260-eb9f6497f0f0")
+		)
+		(instances
+			(project "stm32_radio"
+				(path "/432d5beb-0309-422b-bb62-0445459d5147"
+					(reference "#FLG05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 66.04 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5de2cd3b-4ffc-464b-b3ef-a7282e0547c2")
+		(property "Reference" "#PWR01"
+			(at 66.04 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 66.04 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 66.04 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.04 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 66.04 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b1f2c1fe-a83b-46ce-98a4-e241d5efee01")
+		)
+		(instances
+			(project ""
+				(path "/432d5beb-0309-422b-bb62-0445459d5147"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x03_Pin")
 		(at 71.12 105.41 270)
 		(unit 1)
@@ -2261,6 +2375,14 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC" "C49257"
+			(at 71.12 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "e3f7f21f-6317-48f0-b3e7-5db7a138d941")
 		)
@@ -2274,139 +2396,6 @@
 			(project ""
 				(path "/432d5beb-0309-422b-bb62-0445459d5147"
 					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 66.04 113.03 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c79a6b6a-422c-456c-ae22-876ccc965f8b")
-		(property "Reference" "#PWR01"
-			(at 66.04 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 66.04 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 66.04 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 66.04 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 66.04 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d5327b32-6fdf-4cd9-85a9-3fe9d8b9f84c")
-		)
-		(instances
-			(project ""
-				(path "/432d5beb-0309-422b-bb62-0445459d5147"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 38.1 143.51 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ce45469a-bc58-4f7a-b4bd-8297739fc899")
-		(property "Reference" "#FLG01"
-			(at 36.195 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 34.29 143.5099 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 38.1 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 38.1 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 38.1 143.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "43b0970d-41dc-4222-8ae5-162c52bd89e2")
-		)
-		(instances
-			(project ""
-				(path "/432d5beb-0309-422b-bb62-0445459d5147"
-					(reference "#FLG01")
 					(unit 1)
 				)
 			)
