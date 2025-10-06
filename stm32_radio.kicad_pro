@@ -577,6 +577,10 @@
       {
         "netclass": "Default",
         "pattern": "/Radio MCU/Power EN"
+      },
+      {
+        "netclass": "50ohm_thin",
+        "pattern": "50_ohm_test"
       }
     ]
   },
